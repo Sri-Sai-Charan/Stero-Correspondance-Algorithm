@@ -90,8 +90,8 @@ def get_ransac_Inliers(features):
             selected_indices = indices
             chosen_f = f_8
 
-    filtered_features = features[selected_indices, :]
-    return chosen_f, filtered_features
+    filtered_f = features[selected_indices, :]
+    return chosen_f, filtered_f
 
 def get_e_matrix(K1, K2, F):
     E = K2.T.dot(F).dot(K1)
@@ -200,7 +200,7 @@ def getEpipolarLines(set1, set2, F, image0, image1, file_name, rectified = False
         cv.circle(img_epi1, (int(set1[i,0]),int(set1[i,1])), 10, (0,0,255), -1)
         img_epi1 = cv.line(img_epi1, (int(x1_min), int(y1_min)), (int(x1_max), int(y1_max)), (255, 0, int(i*2.55)), 2)
 
-    image_1, image_2 = makeImageSizeSame([img_epi1, img_epi2])
+    image_1, image_2 = resize_images([img_epi1, img_epi2])
     concat = np.concatenate((image_1, image_2), axis = 1)
     concat = cv.resize(concat, (1920, 660))
     displaySaveImage(concat, file_name)
@@ -233,7 +233,7 @@ def get_dataset(dataset_path, n_img):
 
     return images
 
-def makeImageSizeSame(imgs):
+def resize_images(imgs):
     images = imgs.copy()
     sizes = []
     for image in images:
@@ -257,7 +257,7 @@ def showMatches(img_1, img_2, matched_pairs, color, file_name):
     image_1 = img_1.copy()
     image_2 = img_2.copy()
 
-    image_1, image_2 = makeImageSizeSame([image_1, image_2])
+    image_1, image_2 = resize_images([image_1, image_2])
     concat = np.concatenate((image_1, image_2), axis = 1)
 
     if matched_pairs is not None:
