@@ -36,8 +36,10 @@ python3 main.py --Dataset pendulum
 python3 main.py --Dataset octagon
 ```
 ### Results
-* Depth Image Gray Curule
-![alt text](https://github.com/Sri-Sai-Charan/Stero-Correspondance-Algorithm/blob/main/Output/depth_image_gray_curule.png)
+* Depth Image Gray Curule <br />
+<center>
+  ![alt text](https://github.com/Sri-Sai-Charan/Stero-Correspondance-Algorithm/blob/main/Output/depth_image_gray_curule.png)
+<center />
 
 
 ## Authors
