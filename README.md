@@ -36,7 +36,7 @@ python3 main.py --Dataset pendulum
 python3 main.py --Dataset octagon
 ```
 ### Results
-![alt text](https://github.com/Sri-Sai-Charan/Stero-Correspondance-Algorithm/tree/main/Output/*)
+![alt text](https://github.com/Sri-Sai-Charan/Stero-Correspondance-Algorithm/blob/main/Output/depth_image_gray_curule.png)
 
 
 ## Authors
