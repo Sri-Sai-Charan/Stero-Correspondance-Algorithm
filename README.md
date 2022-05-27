@@ -50,6 +50,9 @@ python3 main.py --Dataset octagon
 
 ![alt text](https://github.com/Sri-Sai-Charan/Stero-Correspondance-Algorithm/blob/main/Output/disparity_image_gray_curule.png)
 
+* Disparity Image Heat Curule <br />
+
+![alt text](https://github.com/Sri-Sai-Charan/Stero-Correspondance-Algorithm/blob/main/Output/disparity_image_heat_curule.png)
 
 
 
