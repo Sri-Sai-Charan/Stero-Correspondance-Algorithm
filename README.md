@@ -36,6 +36,11 @@ python3 main.py --Dataset pendulum
 python3 main.py --Dataset octagon
 ```
 ### Results
+
+* Rectified Epilines Curule <br />
+
+![alt text](https://github.com/Sri-Sai-Charan/Stero-Correspondance-Algorithm/blob/main/Output/rectified_epilines_curule.png)
+
 * Depth Image Gray Curule <br />
 
 ![alt text](https://github.com/Sri-Sai-Charan/Stero-Correspondance-Algorithm/blob/main/Output/depth_image_gray_curule.png)
@@ -43,8 +48,6 @@ python3 main.py --Dataset octagon
 * Depth Image Heat Curule <br />
 
 ![alt text](https://github.com/Sri-Sai-Charan/Stero-Correspondance-Algorithm/blob/main/Output/depth_image_heat_curule.png)
-
-
 
 * Disparity Image Gray Curule <br />
 
